@@ -1,13 +1,130 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  text-align: center;
+  padding: 2.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header h1 {
+  font-size: 400%;
+  font-weight: normal;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 130%;
+}
+
+.input_box {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.input_box input {
+  width: 25%;
+  height: 2.5rem;
+  font-size: large;
+  padding: 1rem;
+  outline-color: #a6d1ff;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  border-radius: 5px !important;
+  padding: 0.45rem 0.9rem !important;
+}
+
+.box {
+  padding: 1rem;
+  background: #fbfbfb;
+  width: 16rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.box:hover a{
+  color: green;
+}
+
+.box img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  width: 80%;
+}
+
+.content_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    background-color: skyblue;
+  }
+
+  html{
+    font-size: 12px;
+  }
+  .box{
+     width: 22rem;
+     font-size: 20px;
+  }
+  .box img{
+    width: 20rem;
+    height: 20rem
+  }
+
+  .input_box input {
+    width: 16rem;
+    padding: 2rem 1rem;
+  }
+
+  button{
+    padding: 0.8rem 1.5rem !important;
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .content {
+    width: 80%;
+  }
 }
